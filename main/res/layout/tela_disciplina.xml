@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e3f2fd">
+
+    <!-- Conteúdo rolável -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/top_bar"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="#399fe1"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Disciplinas"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true" />
+
+                <ImageButton
+                    android:id="@+id/home_button"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/home"
+                    android:contentDescription="Home"
+                    android:scaleType="fitCenter" />
+            </RelativeLayout>
+
+
+            <!-- Botões das disciplinas -->
+            <LinearLayout
+                android:id="@+id/button_container"
+                android:layout_below="@id/top_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:padding="16dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_matematica"
+            android:layout_width="230dp"
+            android:layout_height="55dp"
+            android:text="MATEMÁTICA"
+            android:textColor="#0000ff"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+
+            app:backgroundTint="@android:color/white"
+            app:strokeColor="#C9E1FB"
+            app:strokeWidth="2dp"
+            app:cornerRadius="8dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_educacao_fisica"
+            android:layout_width="230dp"
+            android:layout_height="55dp"
+            android:text="EDUCAÇÃO FÍSICA"
+            android:textColor="#00c0ff"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+
+            app:backgroundTint="@android:color/white"
+            app:strokeColor="#C9E1FB"
+            app:strokeWidth="2dp"
+            app:cornerRadius="8dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_ensino_religioso"
+            android:layout_width="230dp"
+            android:layout_height="55dp"
+            android:text="ENSINO RELIGIOSO"
+            android:textColor="#c000ff"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+
+            app:backgroundTint="@android:color/white"
+            app:strokeColor="#C9E1FB"
+            app:strokeWidth="2dp"
+            app:cornerRadius="8dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_portugues"
+            android:layout_width="230dp"
+            android:layout_height="55dp"
+            android:text="LÍNGUA PORTUGUESA"
+            android:textColor="#fa0000"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+
+            app:backgroundTint="@android:color/white"
+            app:strokeColor="#C9E1FB"
+            app:strokeWidth="2dp"
+            app:cornerRadius="8dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_lingua_estrangeira"
+            android:layout_width="230dp"
+            android:layout_height="55dp"
+            android:text="LÍNGUA ESTRANGEIRA"
+            android:textColor="#ff00ff"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+
+            app:backgroundTint="@android:color/white"
+            app:strokeColor="#C9E1FB"
+            app:strokeWidth="2dp"
+            app:cornerRadius="8dp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_artes"
+            android:layout_width="230dp"
+            android:layout_height="55dp"
+            android:text="ARTES"
+            android:textColor="#ff8000"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+
+            app:backgroundTint="@android:color/white"
+            app:strokeColor="#C9E1FB"
+            app:strokeWidth="2dp"
+            app:cornerRadius="8dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_historia"
+            android:layout_width="230dp"
+            android:layout_height="55dp"
+            android:text="HISTÓRIA"
+            android:textColor="#642a00"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+
+            app:backgroundTint="@android:color/white"
+            app:strokeColor="#C9E1FB"
+            app:strokeWidth="2dp"
+            app:cornerRadius="8dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_geografia"
+            android:layout_width="230dp"
+            android:layout_height="55dp"
+            android:text="GEOGRAFIA"
+            android:textColor="#ffc000"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+
+            app:backgroundTint="@android:color/white"
+            app:strokeColor="#C9E1FB"
+            app:strokeWidth="2dp"
+            app:cornerRadius="8dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_ciencias"
+            android:layout_width="230dp"
+            android:layout_height="55dp"
+            android:text="CIÊNCIAS"
+            android:textColor="#2be405"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+
+            app:backgroundTint="@android:color/white"
+            app:strokeColor="#C9E1FB"
+            app:strokeWidth="2dp"
+            app:cornerRadius="8dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_outras"
+            android:layout_width="230dp"
+            android:layout_height="55dp"
+            android:text="OUTRAS"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"
+
+            app:backgroundTint="@android:color/white"
+            app:strokeColor="#C9E1FB"
+            app:strokeWidth="2dp"
+            app:cornerRadius="8dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</FrameLayout>
